@@ -1,6 +1,7 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Navbar from "./Navbar";
+import SearchPokemon from "./SearchPokemon";
 
 const darkTheme = createTheme({
   palette: {
@@ -13,6 +14,7 @@ export default function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Navbar />
+      <SearchPokemon />
     </ThemeProvider>
   );
 }
